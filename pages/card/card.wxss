@@ -1,0 +1,113 @@
+.contact-detail {
+  padding: 40rpx;
+}
+
+/* ----------------------------------------上传头像---------------------------------------- */
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20rpx;
+}
+
+.avatar {
+  width: 100rpx;  /* 头像宽度 */
+  height: 100rpx; /* 头像高度 */
+  border-radius: 50%; /* 圆形效果 */
+  border: 2rpx solid #ccc; /* 边框 */
+}
+
+.upload-button {
+  margin-top: 10rpx; /* 按钮与头像的间距 */
+}
+
+/* ----------------------------------------联系人基本信息---------------------------------------- */
+.label {
+  font-size: 28rpx;
+  color: #999;
+  margin-bottom: 10rpx;
+}
+
+.value {
+  font-size: 36rpx;
+  color: #000;
+  width: 100%;
+  background-color: transparent;  /* 输入框透明背景，与容器背景一致 */
+  border: none;  
+}
+
+/* 可编辑区域的样式 */
+.editable {
+  border: 1rpx solid #ccc;  /* 较浅的边框颜色 */
+  padding: 12rpx;  /* 调整内边距 */
+  border-radius: 10rpx;  /* 更加圆润的边角 */
+  margin-bottom: 20rpx;  /* 调整下外边距 */
+  background-color: #ffffff;  /* 使用白色背景 */
+  box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.1);  /* 添加轻微阴影效果 */
+  display: flex;  /* 使用 Flexbox 布局 */
+  align-items: center;  /* 垂直居中 */
+  transition: all 0.3s ease;  /* 添加过渡效果 */
+}
+
+/* 图标的样式 */
+.icon {
+  width: 60rpx;  /* 图标宽度 */
+  height: 60rpx;  /* 图标高度 */
+  margin-right: 8rpx;  /* 图标与文本之间的间距 */
+}
+
+/* 输入框样式 */
+.input {
+  border: none;  /* 去除边框 */
+  outline: none;  /* 去除焦点样式 */
+  flex-grow: 1;  /* 输入框占满剩余空间 */
+}
+
+/* 鼠标悬停状态 */
+.editable:hover {
+  border-color: #007aff;  /* 悬停时改变边框颜色 */
+  background-color: #f0f8ff;  /* 悬停时背景颜色稍微变亮 */
+  box-shadow: 0 6rpx 12rpx rgba(0, 0, 0, 0.15);  /* 增加阴影效果 */
+}
+
+/* ----------------------------------------操作按钮---------------------------------------- */
+.operation-section {
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* 基础按钮样式 */
+button {
+  width: 300rpx;
+  height: 80rpx;
+  background-image: linear-gradient(135deg, #4CAF50, #2E7D32);  /* 渐变背景从绿色到深绿色 */
+  color: white;
+  border: none;  /* 去除边框 */
+  border-radius: 20rpx;
+  font-size: 32rpx;
+  display: flex;  /* 使用 flexbox */
+  align-items: center;  /* 垂直居中 */
+  justify-content: center;  /* 水平居中 */
+  box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.2);  /* 添加阴影效果 */
+  transition: all 0.3s ease;  /* 添加过渡效果 */
+  cursor: pointer;  /* 鼠标悬停时显示为指针 */
+}
+
+/* 鼠标悬停状态 */
+button:hover {
+  background-image: linear-gradient(135deg, #2E7D32, #1B5E20);  /* 悬停时改变渐变色 */
+  box-shadow: 0 6rpx 15rpx rgba(0, 0, 0, 0.3);  /* 增加阴影效果 */
+}
+
+/* 警告按钮样式 */
+button[type="warn"] {
+  background-image: linear-gradient(135deg, #FF3D00, #C62828);  /* 渐变背景从红色到深红色 */
+  color: white;
+}
+
+/* 警告按钮的悬停状态 */
+button[type="warn"]:hover {
+  background-image: linear-gradient(135deg, #C62828, #A52C2C);  /* 悬停时改变渐变色 */
+  box-shadow: 0 6rpx 15rpx rgba(0, 0, 0, 0.3);  /* 增加阴影效果 */
+}
